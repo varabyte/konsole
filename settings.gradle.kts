@@ -6,6 +6,10 @@ pluginManagement {
     }
 }
 
+plugins {
+    // Only in settings.gradle in modern Gradle
+    id("org.gradle.toolchains.foojay-resolver-convention") version ("0.6.0")
+}
 rootProject.name = "kotter"
 
 include(":kotter")
